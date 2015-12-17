@@ -15,10 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+<<<<<<< HEAD
+
+urlpatterns = [
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^Genre/$', 'music.views.view_genre'),
+
+=======
 from django.conf.urls import url
 from music import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^view_performer/$', 'music.views.view_performer'),
+>>>>>>> 16d42800e552f2319e04750c0a413ebc8b1f8269
 ]

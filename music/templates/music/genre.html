@@ -1,0 +1,28 @@
+{%extends 'myprojectapp/user_profile.html'%}
+{%block content%}
+
+<table class="table table-bordered" border=2>
+    <thead>
+        <tr>
+            <th>Genre</th>
+        </tr>
+    </thead>
+    <tbody>
+        {%for genre in genre%}
+
+        
+            
+            <li class="dropdown">
+          <a href="/Genre/" class="dropdown-toggle" data-toggle="dropdown">Event</a>
+          <ul class="dropdown-menu forAnimate" role="menu">
+            <li><a href="/Genre1/">Genre1</a></li>
+            <li><a href="/Genre2/">Genre2</a></li>
+            <li><a href="/Genre3/">Genre3</a></li>
+            
+          </ul>
+        </li>
+
+        {%endfor%}
+    </thbody>
+</table>
+{%endblock%}

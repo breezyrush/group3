@@ -1,0 +1,22 @@
+<!DOCTOTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Performers <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
+    <h1><a href="/"> Performers </a></h1>
+    
+</div>
+    {% for n in performers%}
+    <div>
+       <p> {{n.performers_genre}} </p>
+       <p> {{n.performers_name}} </p>
+       
+       
+    </div>
+    {% endfor %}
+</body>
+</html>

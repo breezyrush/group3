@@ -1,0 +1,17 @@
+<h1> Songs </h1>
+<table class="table table-bordered" border=2>
+	<thead>
+		<tr>
+		<th> Song Name <th>
+		</tr>
+	</thead>
+	<tbody>
+
+		{%for cd in cd%}
+		<tr>
+			<td>{{song.song_name}}</td>
+		<tr>
+		{%endfor%}
+    </tbody>
+</table>
+

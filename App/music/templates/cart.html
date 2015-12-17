@@ -1,0 +1,16 @@
+<h1> Cart </h1>
+{% for cd in cd  %}
+     {% for cart in cart %}
+         {% if cd.id == cart.cdid %}
+            <table border=2>
+                <tr>
+                    <td>Name : {{ cd.cd_name }}</td>
+                    <td>Price : {{cd.cd_price}}</td>
+                    <td>Purchase Date :{{ cd.purdate }}</td>
+                </tr>
+             <table>
+
+         {% endif %}
+     {% endfor %}
+{% endfor %}
+

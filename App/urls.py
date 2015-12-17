@@ -19,6 +19,11 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+=======
+<<<<<<< HEAD
+
+urlpatterns = [
+    url(r'^admin/', include(admin.site.urls)),
     url(r'^Genre/$', 'music.views.view_genre'),
 
 =======
@@ -29,4 +34,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^view_performer/$', 'music.views.view_performer'),
 >>>>>>> 16d42800e552f2319e04750c0a413ebc8b1f8269
+>>>>>>> bbfc054bae8a20ebb7011618290c65909833971c
 ]
